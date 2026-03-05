@@ -198,6 +198,13 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
+.hero-value {
+  font-size: var(--font-size-base);
+  opacity: 0.9;
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
 .hero-sub {
   font-size: var(--font-size-sm);
   opacity: 0.85;
@@ -988,6 +995,7 @@ ul { list-style: none; }
     <p class="hero-name-en">Tamura Akihiro</p>
     <p class="hero-title">現場経験30年以上 ／ 信頼構築と課題解決を強みとする</p>
     <p class="hero-catch">お客様の立場で考え、課題を見つけ、解決に向けて行動します。</p>
+    <p class="hero-value">現場の困りごとを言語化し、優先順位をつけ、関係者を巻き込みながら解決まで運びます。</p>
     <p class="hero-sub">百貨店販売・物流営業の現場で30年以上の経験を積み、顧客との信頼関係構築と課題把握を強みとしてきました。現在は生成AIや業務効率化など新しい分野の学習にも積極的に取り組んでいます。</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Contact</a>
@@ -1005,9 +1013,8 @@ ul { list-style: none; }
       <h2 class="section-heading">Summary — 概要</h2>
     </div>
     <ul class="summary-text">
-      <li>百貨店での販売・接客を経て、物流業界でセールスドライバーとして法人顧客の営業を25年以上担当してきました。</li>
-      <li>顧客との信頼関係構築、課題の把握と提案、売上管理など、現場の最前線で幅広い業務経験を積んでいます。</li>
-      <li>退職後、興味を持った生成AI・業務効率化の分野でスクールに通い、現在も継続的に学習に取り組んでいます。</li>
+      <li>30年以上の現場経験（販売・物流営業）を通じて、信頼構築／課題把握／改善提案を実践してきました。</li>
+      <li>物流営業では <strong>営業所内1位4回</strong>、<strong>4期連続プラス査定</strong> など、成果を出しながら継続して改善に取り組みました。</li>
     </ul>
     <div class="strengths">
       <div class="strength-card">
@@ -1019,8 +1026,8 @@ ul { list-style: none; }
         <div class="strength-title">現場目線で具体的な<br>改善を考える力</div>
       </div>
       <div class="strength-card">
-        <div class="strength-icon">&#x1F9D8;</div>
-        <div class="strength-title">冷静な判断力と<br>安定したコミュニケーション</div>
+        <div class="strength-icon">&#x1F9ED;</div>
+        <div class="strength-title">トラブル時も優先順位をつけ、<br>関係者と調整して解決へ導く</div>
       </div>
     </div>
   </div>
@@ -1150,7 +1157,7 @@ ul { list-style: none; }
             <ul>
               <li>法人顧客の定期訪問・配送サービス提案・新規開拓</li>
               <li>売上・集金・顧客管理、大口案件の受注対応</li>
-              <li>業績評価（売上・顧客件数・利益率・上長評価）で<strong>営業所内1位を4度獲得</strong></li>
+              <li>売上／顧客件数などの業績評価で<strong>営業所内1位を4度獲得</strong></li>
             </ul>
             <div class="timeline-skills">
               <div class="timeline-skills-label">習得スキル</div>
@@ -1187,7 +1194,7 @@ ul { list-style: none; }
             <p>担当コースを任され、集配・集金に加え、売上管理・新規顧客開拓・大型案件の受注など営業担当としての経験を積みました。</p>
             <ul>
               <li>売上・集金管理、新規顧客開拓、大型案件の受注</li>
-              <li>年4回の業績評価で<strong>4期連続プラス査定</strong>を獲得</li>
+              <li>業績評価で<strong>4期連続プラス査定</strong>を獲得</li>
               <li>お客様の立場に立ったヒアリングと課題解決の提案を実践</li>
             </ul>
             <div class="timeline-skills">
@@ -1215,7 +1222,7 @@ ul { list-style: none; }
             <ul>
               <li>店頭販売・顧客対応、発注・在庫管理</li>
               <li>催事の企画立案・業者の選定と交渉</li>
-              <li>取引業者との価格交渉で<strong>新規取引を獲得</strong>した実績</li>
+              <li>取引業者との価格交渉で<strong>新規取引を獲得</strong></li>
             </ul>
             <div class="timeline-skills">
               <div class="timeline-skills-label">習得スキル</div>
@@ -1244,8 +1251,8 @@ ul { list-style: none; }
     </div>
 
     <div class="case-header">
-      <div class="case-title">生成AI学習の成果 — AIチャットボットの開発</div>
-      <div class="case-subtitle">DMM生成AIキャンプでの学習をもとに、課題設定からデモ構築まで一人で取り組んだ成果物</div>
+      <div class="case-title">業務改善を想定した生成AIチャットボット（学習成果）</div>
+      <div class="case-subtitle">DMM生成AIキャンプでの学習をもとに、業務課題の設定からデモ構築まで一人で取り組んだ提案型の成果物</div>
     </div>
 
     <div class="case-steps">
@@ -1393,7 +1400,7 @@ ul { list-style: none; }
         <div class="contact-label">Email</div>
         <div class="contact-value">
           <div class="email-copy-wrap">
-            <span id="emailText">1224tamura@gmail.com</span>
+            <span id="emailText" data-email="1224tamura@gmail.com">1224tamura [at] gmail.com</span>
             <button class="copy-btn" id="copyBtn" onclick="copyEmail()">コピー</button>
           </div>
         </div>
@@ -1444,19 +1451,20 @@ ul { list-style: none; }
 
   // --- Email copy ---
   window.copyEmail = function() {
-    const email = document.getElementById('emailText').textContent;
-    const btn = document.getElementById('copyBtn');
+    var el = document.getElementById('emailText');
+    var email = el.getAttribute('data-email') || el.textContent;
+    var btn = document.getElementById('copyBtn');
+    function onCopied() {
+      btn.textContent = 'コピーしました';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.textContent = 'コピー';
+        btn.classList.remove('copied');
+      }, 2000);
+    }
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(email).then(function() {
-        btn.textContent = 'コピーしました';
-        btn.classList.add('copied');
-        setTimeout(function() {
-          btn.textContent = 'コピー';
-          btn.classList.remove('copied');
-        }, 2000);
-      });
+      navigator.clipboard.writeText(email).then(onCopied);
     } else {
-      // Fallback
       var ta = document.createElement('textarea');
       ta.value = email;
       ta.style.position = 'fixed';
@@ -1465,12 +1473,7 @@ ul { list-style: none; }
       ta.select();
       document.execCommand('copy');
       document.body.removeChild(ta);
-      btn.textContent = 'コピーしました';
-      btn.classList.add('copied');
-      setTimeout(function() {
-        btn.textContent = 'コピー';
-        btn.classList.remove('copied');
-      }, 2000);
+      onCopied();
     }
   };
 })();
