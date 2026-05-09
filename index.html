@@ -661,6 +661,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
+  flex-wrap: wrap;
 }
 
 .copy-btn {
@@ -970,7 +971,7 @@ ul { list-style: none; }
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">トップ</a>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="メニュー" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
@@ -999,7 +1000,7 @@ ul { list-style: none; }
     <p class="hero-sub">百貨店販売・物流営業の現場で30年以上の経験を積み、顧客との信頼関係構築と課題把握を強みとしてきました。現在は生成AIや業務効率化など新しい分野の学習にも積極的に取り組んでいます。</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Contact</a>
-      <a href="https://github.com/" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/1224tamura-hue" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
@@ -1056,7 +1057,7 @@ ul { list-style: none; }
       </div>
     </div>
 
-    <p style="font-size:var(--font-size-sm);color:var(--color-text-muted);margin-bottom:var(--spacing-md);font-weight:600;letter-spacing:0.05em;">その他のスキル</p>
+    <p style="font-size:var(--font-size-sm);color:var(--color-text-light);margin-bottom:var(--spacing-md);font-weight:600;letter-spacing:0.05em;">その他のスキル</p>
     <div class="skills-grid">
       <div class="skill-category">
         <h3>業務スキル</h3>
@@ -1420,14 +1421,15 @@ ul { list-style: none; }
         <div class="contact-value">
           <div class="email-copy-wrap">
             <span id="emailText" data-email="1224tamura@gmail.com">1224tamura [at] gmail.com</span>
-            <button class="copy-btn" id="copyBtn" onclick="copyEmail()">コピー</button>
+            <a class="copy-btn" href="mailto:1224tamura@gmail.com">メール作成</a>
+            <button class="copy-btn" id="copyBtn" type="button" onclick="copyEmail()">コピー</button>
           </div>
         </div>
       </div>
       <div class="contact-item">
         <div class="contact-label">GitHub</div>
         <div class="contact-value">
-          <a href="https://github.com/" target="_blank" rel="noopener">github.com/tamura-akihiro</a>
+          <a href="https://github.com/1224tamura-hue" target="_blank" rel="noopener">github.com/1224tamura-hue</a>
         </div>
       </div>
     </div>
@@ -1458,13 +1460,15 @@ ul { list-style: none; }
   const links = document.getElementById('navLinks');
 
   toggle.addEventListener('click', function() {
-    links.classList.toggle('open');
+    var isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   // Close mobile nav on link click
   links.querySelectorAll('a').forEach(function(a) {
     a.addEventListener('click', function() {
       links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 
