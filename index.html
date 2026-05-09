@@ -1001,6 +1001,7 @@ ul { list-style: none; }
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Contact</a>
       <a href="https://github.com/1224tamura-hue" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+      <button class="btn btn-outline" id="printBtn" type="button">印刷・PDF保存</button>
     </div>
   </div>
 </section>
@@ -1470,6 +1471,12 @@ ul { list-style: none; }
       links.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  // --- Print / PDF save ---
+  const printBtn = document.getElementById('printBtn');
+  printBtn.addEventListener('click', function() {
+    window.print();
   });
 
   // --- Email copy ---
